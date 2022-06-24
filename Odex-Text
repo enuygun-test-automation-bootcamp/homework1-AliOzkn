@@ -1,0 +1,40 @@
+
+
+SORU 1) ACCESS MODIFIERS - INTERNAL NEDIR ?
+
+CEVAP: Access Modifiers, siniflarin, interfacelerin, degiskenlerin,metodlarin,
+yapicilarin vs. erisilebilirligini ayarlamak icin kullanilir. JAVA'daki 4 adet Access Modifiers sunlar:
+
+Default: Eger herhangi bir sinif, method, degisken vs. icin access modifier tanimlamazsak, otomatik Default olarak alinir.
+Default olan bir oge, o paket icerisindeki diger sıinflar tarafindan kullanilabilir. Farkli paketteki sinifta kullanilamaz.
+
+Private: Private olarak tanıimlanan oge sadece tanimlandigi sinifta kullanilabilir. Fakat öogeyi Getter Ve Setter metodlariyla baska
+sinifta kullanabiliriz.
+
+Protected: Bu sekilde tanimlanan ogelere ayni paket icindeki alt siniflar tarafindan erisilebilir. Interface ve siniflar protected yapilamaz.
+
+Public: Bu sekilde tanimlanan ogelere her yerden erisilebilir.
+
+Internal: Bu ozellik Java'nın degil. C#'da kullaniliyor. Internal tanimlanan bir ogeye, bulundugu yapi(Tum siniflar, interfaces vs.) tarafından tam erisim saglanir.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+SORU 2) INTERFACE VE INHERITANCE HANGISI RUNTIME'DA ONCE CAGRILIR? NEDEN?
+
+CEVAP:
+Java Class specification Syntax sayfasina göre Bir sinif olusturmaya calisildiginda belirli bir oge sirasi vardir.
+1- Class Declaration (Normal or Enum)
+2- Class Modifiers
+3- Type Parameters
+4- SuperClass   ************
+5- SuperInterfaces *********
+6- Class Body {} parantezleriyle cevrili.
+--------------------------------------------------------
+AYNI SORU ICIN STACK OVERFLOW'DAN BIR YORUM
+
+Derleyici, class'ı byte koduna donusturdugunde, ilk olarak parent class'a bakmalidir. Bunun nedeni parent classlarin ilgili yöntem ve methodlari tutmasi.
+Ana sınıfın derlenebilir olması gerektiğinden, derleyicinin o sınıfın ne olduğunu önceden bilmesi daha kolaydır.
+Ayrıca, yalnızca bir sınıfı extend edebilirken, istediğimiz sayıda interface uygulayabiliriz.
+Eger extend kelimesi, implementlerin arasina karisirsa, derleme suresi ciddi olcude artabilir.
+Derleyiciler, geliştirme süresini azaltmak için olabildiğince hizli sekilde cozume gitmek isterler.
+
+
