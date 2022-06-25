@@ -5,7 +5,7 @@ public class EndMill extends CuttingTools{
     }
     @Override
     void endMillInformation() {
-        System.out.println("Parmak Frezeler, parcaya form vermek icin kullanilir. X,Y ve Z yonlerinde hareket edebilir.");
+        System.out.println("End mills are using to give form (shape) to the part. In coordinate system, they can move in X, Y and Z axis.");
     }
     @Override
     void drillInformation() {}

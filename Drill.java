@@ -5,7 +5,7 @@ public class Drill extends CuttingTools{
     }
     @Override
     void drillInformation() {
-        System.out.println("Matkaplar, parca uzerinde delik delmek icin kullanilir. Sadece Z yonunde hareket edebilir.");
+        System.out.println("Drills are using to drill holes on the part. In coordinate system, they can only move in Z axis.");
     }
     @Override
     void endMillInformation() {}
