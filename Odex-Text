@@ -8,10 +8,10 @@ yapicilarin vs. erisilebilirligini ayarlamak icin kullanilir. JAVA'daki 4 adet A
 Default: Eger herhangi bir sinif, method, degisken vs. icin access modifier tanimlamazsak, otomatik Default olarak alinir.
 Default olan bir oge, o paket icerisindeki diger sıinflar tarafindan kullanilabilir. Farkli paketteki sinifta kullanilamaz.
 
-Private: Private olarak tanıimlanan oge sadece tanimlandigi sinifta kullanilabilir. Fakat öogeyi Getter Ve Setter metodlariyla baska
+Private: Private olarak tanıimlanan oge sadece tanimlandigi sinifta kullanilabilir. Fakat ogeyi Getter Ve Setter metodlariyla baska
 sinifta kullanabiliriz.
 
-Protected: Bu sekilde tanimlanan ogelere ayni paket icindeki alt siniflar tarafindan erisilebilir. Interface ve siniflar protected yapilamaz.
+Protected: Bu sekilde tanimlanan ogelere ayni paket icindeki diger siniflar tarafindan da erisilebilir. Inheritance ile paket disi erisim de mumkundur.
 
 Public: Bu sekilde tanimlanan ogelere her yerden erisilebilir.
 
