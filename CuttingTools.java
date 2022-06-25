@@ -9,8 +9,8 @@ public abstract class CuttingTools {
     Fuc: 1 uc basina ilerleme (mm)
     Z: Uc Sayisi
     */
-    private static double Vc,D,S,F,Fuc;
-    private static int Z;
+    private  double Vc,D,S,F,Fuc;
+    private  int Z;
 
     public CuttingTools(double Vc, double D, double Fuc, int Z){
         this.Vc = Vc;
@@ -18,7 +18,7 @@ public abstract class CuttingTools {
         this.Fuc = Fuc;
         this.Z = Z;
     }
-    private static double rpm(){
+    private  double rpm(){
         return S = ((Vc*1000)/(3.14*D)); //Devir Formulu
 
     }
@@ -29,7 +29,7 @@ public abstract class CuttingTools {
             System.out.println("rpm: " + rpm());
         }
     }
-    private static double feed(){
+    private  double feed(){
         return  F = (Fuc*Z*S);    // Ilerleme Formulu
     }
     void showFeed(){
